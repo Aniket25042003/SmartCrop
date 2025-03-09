@@ -1,0 +1,183 @@
+:root {
+  --primary-color: #004d00; /* Dark green */
+  --text-color: #ffffff; /* White text */
+  --button-background: transparent; /* Transparent button background */
+  --button-border: 2px solid #ffffff; /* White border for buttons */
+  --background-color: #003300; /* Darker green for background */
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+}
+
+html, body {
+  height: 100%; /* Full height of the viewport */
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column; /* Stack header, main, and footer vertically */
+  min-height: 100vh; /* Ensure the body takes up full viewport height */
+  background: radial-gradient(ellipse at center, #003300, #66cc66);
+  color: var(--text-color); /* White text */
+}
+
+header {
+  background: linear-gradient(to right, #003300, #004d00, #66cc66); /* Same gradient as the body */
+  padding: 10px;
+  color: var(--text-color); /* White text */
+  text-align: center;
+  font-size: 1.2em;
+  width: 100%; /* Ensure header takes full width */
+}
+
+main {
+  flex-grow: 1; /* Allow main to grow and take up available space */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  padding-top: 60px; /* Adjust based on header height */
+  padding-bottom: 50px; /* Adjust based on footer height */
+}
+
+h1, h2, p, li {
+  color: var(--text-color); /* Ensure all text is white */
+}
+
+a {
+  font-weight: 500;
+  color: var(--text-color); /* White text for links */
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: var(--button-border); /* Change link color on hover */
+}
+
+button {
+  border-radius: 8px;
+  border: var(--button-border);
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: var(--button-background); /* Transparent button background */
+  color: var(--text-color); /* White text */
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+  border-color: var(--text-color); /* White border on hover */
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5em; /* Slightly smaller font size */
+  }
+  button {
+    font-size: 0.9em; /* Slightly smaller buttons on small screens */
+  }
+  header {
+    font-size: 1em; /* Adjust header font size */
+  }
+  main {
+    padding: 10px; /* Less padding on smaller screens */
+  }
+}
+
+.nav ul {
+  list-style: none; /* Remove default list styling */
+  display: flex; /* Use flexbox to arrange items in a row */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+.nav ul li {
+  margin-left: 20px; /* Space between list items */
+}
+
+.container {
+  display: flex; /* Use flexbox for alignment */
+  flex-direction: column; /* Stack items vertically */
+  justify-content: center; /* Center items vertically */
+  align-items: center; /* Center items horizontally */
+  text-align: center; /* Center text */
+  width: 100%; /* Full width */
+  padding: 20px; /* Add padding for spacing */
+}
+
+.title {
+  font-size: 36px; /* Title font size */
+  font-weight: 700; /* Bold title */
+  color: var(--text-color); /* White text */
+  margin-bottom: 20px; /* Space below title */
+}
+
+.subtitle {
+  font-size: 18px; /* Subtitle font size */
+  color: var(--text-color); /* White text */
+  margin-bottom: 40px; /* Space below subtitle */
+}
+
+.inputContainer {
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack inputs vertically */
+  align-items: center; /* Center items horizontally */
+  margin-bottom: 20px; /* Space between input groups */
+}
+
+.inputSquare {
+  width: 300px; /* Width of the input square */
+  padding: 10px; /* Padding for spacing */
+  border: 1px solid #ccc; /* Border for the input square */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 16px; /* Font size */
+  color: var(--text-color); /* White text */
+  background-color: transparent; /* Transparent background */
+}
+
+.weightSquare {
+  width: 100px; /* Width of the weight input square */
+  padding: 5px; /* Padding for spacing */
+  border: 1px solid #ccc; /* Border for the weight input */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 14px; /* Font size */
+  color: var(--text-color); /* White text */
+  background-color: transparent; /* Transparent background */
+  margin-top: 5px; /* Space above weight input */
+}
+
+.explanationBox {
+  background-color: transparent; /* Keep the background transparent */
+  border: 2px solid #ffffff; /* White border around the explanation box */
+  border-radius: 10px; /* Rounded corners */
+  margin: 20px; /* Space around the box */
+  padding: 20px; /* Padding inside the box */
+  text-align: left; /* Align text to the left */
+  width: 100%; /* Full width or adjust as needed */
+  max-width: 600px; /* Optional: limit the maximum width */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+}
+
+.questionBox {
+  background-color: transparent; /* Make the background transparent */
+  color: black; /* Black text */
+  padding: 15px; /* Padding for spacing */
+  border: 2px solid #ffffff; /* White border around the box */
+  border-radius: 8px; /* Rounded corners */
+  margin: 20px 0; /* Margin for spacing between boxes */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+}

@@ -1,0 +1,3 @@
+papaya: Papaya is a tropical fruit rich in vitamins and digestive enzymes.
+mango: Mangoes are tropical fruits loved for their sweet and tangy taste.
+pigeonpeas: Pigeon peas are protein-rich legumes used in various cuisines.
